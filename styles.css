@@ -1,0 +1,129 @@
+﻿body {
+    background: #000000;
+    font-family: ubuntu;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 64px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 20px;
+    background: #f6f6f6;
+    font-size: 20px;
+    color: #555;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    height: 46px;
+}
+
+    li:nth-child(even) {
+        padding: 20px;
+        background: #f2f2f2;
+    }
+
+    li span {
+        display: block;
+    }
+
+        li span:nth-child(2) {
+            font-size: 16px;
+            margin-top: 6px;
+            color: #999;
+        }
+
+    li div {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        background: rgba(255,255,255,0.6);
+        width: 40px;
+        text-align: center;
+        padding: 10px 0;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+.button1 {
+    display: inline-flex;
+    padding: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    font-size: 95px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: solid;
+    border-width: 5px;
+    border-radius: 12px;
+}
+
+    .button1:active {
+        background-color: #3e8e41;
+        box-shadow: 0 2px #666;
+        transform: translateY(4px);
+    }
+
+.button2 {
+    display: inline-flex;
+    padding: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    font-size: 95px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #FF3333;
+    border: solid;
+    border-width: 5px;
+    border-radius: 12px;
+}
+
+    .button2:active {
+        background-color: #FE0000;
+        box-shadow: 0 2px #666;
+        transform: translateY(4px);
+    }
+
+.button3 {
+    display: inline-flex;
+    padding: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    font-size: 95px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ffbf00;
+    border: solid;
+    border-width: 5px;
+    border-radius: 12px;
+}
+
+    .button3:active {
+        background-color: #feb204;
+        box-shadow: 0 2px #666;
+        transform: translateY(4px);
+    }
