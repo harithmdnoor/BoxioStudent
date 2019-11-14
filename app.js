@@ -29,7 +29,7 @@ function renderStudents(doc) {
     cross.addEventListener('click', (e) => {
         e.stopPropagation();
         let id = e.target.parentElement.getAttribute('data-id');
-        db.collection('Students').doc(id).delete();
+        db.collection('Teacher').doc(id).delete();
     })
 }
 
@@ -46,7 +46,7 @@ db.collection('Students').get().then(snapshot => {
 form.addEventListener('click', (e) => {
     e.preventDefault();
     if (event.target == button1) {
-        db.collection('Students').add(
+        db.collection('Teacher').add(
             {
                 StudentName: 'Tommy',
                 StudentID: '10175719',
@@ -54,7 +54,7 @@ form.addEventListener('click', (e) => {
             })
     }
     else if (event.target == button2) {
-        db.collection('Students').add(
+        db.collection('Teacher').add(
             {
                 StudentName: 'Tommy',
                 StudentID: '10175719',
@@ -62,7 +62,7 @@ form.addEventListener('click', (e) => {
             })
     }
     else if (event.target == button3) {
-        db.collection('Students').add(
+        db.collection('Teacher').add(
             {
                 StudentName: 'Tommy',
                 StudentID: '10175719',
@@ -72,7 +72,7 @@ form.addEventListener('click', (e) => {
 })
 
 // Real-time listener (Getting real-time data)
-db.collection('Students').onSnapshot(snapshot => {
+db.collection('Teacher').onSnapshot(snapshot => {
     let changes = snapshot.docChanges();
     changes.forEach(change => {
         if (change.type == 'added') {
