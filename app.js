@@ -46,33 +46,33 @@ db.collection('Students').get().then(snapshot => {
 form.addEventListener('click', (e) => {
     e.preventDefault();
     if (event.target == button1) {
-        db.collection('Teacher').add(
+        db.collection('Response').add(
             {
-                StudentName: 'Tommy',
-                StudentID: '10175719',
+                StudentName: 'Harith',
+                StudentID: '10185542',
                 Answer: form.ROne.value
             })
     }
     else if (event.target == button2) {
-        db.collection('Teacher').add(
+        db.collection('Response').add(
             {
-                StudentName: 'Tommy',
-                StudentID: '10175719',
+                StudentName: 'Harith',
+                StudentID: '10185542',
                 Answer: form.RTwo.value
             })
     }
     else if (event.target == button3) {
-        db.collection('Teacher').add(
+        db.collection('Response').add(
             {
-                StudentName: 'Tommy',
-                StudentID: '10175719',
+                StudentName: 'Harith',
+                StudentID: '10185542',
                 Answer: form.RThree.value
             })
     }
 })
 
 // Real-time listener (Getting real-time data)
-db.collection('Teacher').onSnapshot(snapshot => {
+db.collection('Response').onSnapshot(snapshot => {
     let changes = snapshot.docChanges();
     changes.forEach(change => {
         if (change.type == 'added') {
